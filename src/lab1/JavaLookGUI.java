@@ -186,7 +186,7 @@ public class JavaLookGUI {
 
     public static boolean login(String email, String password) {
         for (EmailAccount em : Emails) {
-            if (email != null && email.equals(em.getEmail()) && password.equals(em.getPassword())) {
+            if (em != null && email.equals(em.getEmail()) && password.equals(em.getPassword())) {
                 return true;
             }
         } 
